@@ -80,3 +80,5 @@ while True:
         # Any other exception - something happened, exit
         print('Reading error: '.format(str(e)))
         sys.exit()
+
+# Reference: Feb 2021 https://www.youtube.com/watch?v=ytu2yV3Gn1I

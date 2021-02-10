@@ -138,4 +138,6 @@ while True:
 
         # Remove from our list of users
         del clients[notified_socket]
-        
+
+
+# Reference: Feb 2021 https://www.youtube.com/watch?v=CV7_stUWvBQ
