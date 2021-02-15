@@ -15,7 +15,14 @@ class Card:
     def __init__(self, name):
         self.name = name
 
-class Deck():
+    def __str__(self):
+        return f"{self.name}"
+
+    def __repr__(self):
+        return str(self)
+
+
+class Deck:
     def __init__(self):
         self.cards = []
         self.build()
@@ -30,6 +37,12 @@ class Deck():
 
     def return_cards(self, cards):
         self.cards.extend(cards)
+
+    def __str__(self):
+        return("Kitchen", "Ballroom", "Conservatory", "Dining Room", "Lounge", "Hall", "Study", "Library", "Billiard Room", "Candlestick", "Dagger", "Lead Pipe", "Revolver", "Rope", "Wrench", "Miss Scarlett", "Rev Green", "Colonel Mustard", "Professor Plum", "Mrs. Peacock", "Mrs. White")
+
+    def __repr__(self):
+        return str(self)
 
 class Game:
     def __init__(self, players, deck):
@@ -47,7 +60,7 @@ class Game:
         self.deck.cards = self.deck.cards[1:]
         return drawnCard
 
-class Player():
+class Player:
     def __init__(self, name):
         self.name = name
         self.cards = []
@@ -86,7 +99,7 @@ def return_cards(self, deck):
 #     win.fill((255,255,255))
 #     player.draw(win)
 #     pygame.display.update()
-# 
+#
 # def main():
 #     run = True
 #     p = Player(50,50,100,100,(0,255,0))
@@ -107,5 +120,5 @@ matt = Player("Matt")
 jo = Player("Jo")
 newGame = Game([matt, jo], clueDeck)
 newGame.deal()
-print(jo.cards[0].name, jo.cards[1].name, matt.cards[0].name, matt.cards[1].name)
+print ([card for card in clueDeck.cards])
 return_cards(clueDeck, clueDeck)
