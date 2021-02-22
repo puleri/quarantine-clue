@@ -14,7 +14,7 @@ name = ["Kitchen", "Ballroom", "Conservatory", "Dining Room", "Lounge", "Hall", 
 for n in name: #This is the code that actually makes a deck
     deck.append(Card(n))
 
-shuffle(deck)
+shuffle(name)
 for card in range(21):
         #deal cards here using deck.pop()
         # print(deck.pop().__str__)  #just to prove it works randomly =P
