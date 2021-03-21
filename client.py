@@ -61,7 +61,8 @@ while count < 4:
 # print("THE CRIME FILE: ", crime_file)
 
 def main():
-    input("Press enter for Player 1's hand...")
-    input("Here is your hand Player 1! Keep it a secret and press enter when you are ready to pass...")
-
+    input("Press enter for Player 1's hand...\n")
+    input("Here comes your hand Player 1! Keep it a secret and press enter when you are ready to pass...\n")
+    input(f"\n\n\n\nPlayer 1 write this down and press enter when you are ready to finish your deal! Keep your eye on the player on the top left of your zoom screen. They are acting suspicious.\n\nPLAYER ONE'S HAND: {player1}")
+    input("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlayer two here comes your deal. Make sure no one else can see. Trust no one. Press enter to continue...")
 main()
