@@ -11,20 +11,18 @@ ATOM, Socket.io, selector, Python3
 ---
 
 ### Planning Strategy
-In the first days of strategizing, I read countless documentation from the official Adobe ColdFusion page, from OrtuSolutions, and watching official videos on Youtube. Next came downloading and practicing basic uses of CommandBox and starting a CF project. When running the local server via CommandBox for the first time and using the <cfoutput> tags I began feeling confident with the new language. It was at this point I started to create the backend with Express which I am comfortable with. The point being to introduce less unknown variables to the learning process of learning ColdFusion. When connecting the front and backend I began seeing handshake issues and diverted to fixing this in Node and JS.
+In the first days of strategizing, I read countless documentation on creating card games from Google, and watching tutorial videos on Youtube. When I decided on a structure I began with my first client file. The first iteration printed a list to the console of all the cards. Next, I created new lists with each of the types of cards. The type lists are used to randomly deal one of each to the crime file before compiling to a singular deck. Finally the players are all dealt their hands. 
 
-We decided to produce a minimal viable product before completing the Socket Middleware but still managed to establish a Socket Connection and Disconnect linked to the Chat Index CRUD Action.
+After getting all the parts functional I decided to go with a simple terminal "GUI" that requires an `enter` input to proceed through each step of the deal and finally created a toggle where you can see/hide the case file.
 
 ---
 
 #### Unsolved Issues
-- All the data is displayed in one place.
+- All the data is displayed on the terminal and is not formatted well.
 
-- In the BETA I would like to have this solved by running a program that simply accepts commands asking the user "Player __ are you there? If you are ready press `space` to see your cards".
+- In V 1.0 I would like to have this solved by running a window/GUI that functions the same.
 
-- I would then like the player to see their cards and be asked to "Press `space` again when you are ready to hide your cards."
-
-- This would repeat for each player until finally the last player hides their cards and the next spaces reveal/hide the crime file.
+- There is no way to pull up each players hand after getting to the crime file. I could solve this by binding 1,2,3,4 to the corresponding players hands.
 
 ---
 
