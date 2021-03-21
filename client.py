@@ -57,5 +57,11 @@ while count < 4:
     deck_without_crime.remove(deck_without_crime[0])
     count += 1
 
-print("Player 1's hand: ", player1, "\nPlayer 2's hand: ",player2,"\nPlayer 3's hand: ", player3,"\nPlayer 4's hand: ", player4)
-print("THE CRIME FILE: ", crime_file)
+# print("Player 1's hand: ", player1, "\nPlayer 2's hand: ",player2,"\nPlayer 3's hand: ", player3,"\nPlayer 4's hand: ", player4)
+# print("THE CRIME FILE: ", crime_file)
+
+def main():
+    input("Press enter for Player 1's hand...")
+    input("Here is your hand Player 1! Keep it a secret and press enter when you are ready to pass...")
+
+main()
