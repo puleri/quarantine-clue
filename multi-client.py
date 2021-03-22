@@ -83,8 +83,11 @@ def main():
 |     |_ |       ||       ||   |___
 |_______||_______||_______||_______|  \n\n""", style="bold")
     console.print("The Rules: ", style="bold")
-    console.print("In the dealing phase each player must write down their cards \non seperate pieces of paper. When asking revealing clues then \nthe whole group must allow the two parties a private showing. \nAll applicable Clue rules still apply. This is currently in Beta, \nso any feedback is appreciated! Keep on your toes and enjoy \nremote detectives!\n\n\n\n(Select a number of players between 4-6 to continue...)")
+    console.print("In the dealing phase each player must write down their cards \non seperate pieces of paper. When asking revealing clues then \nthe whole group must allow the two parties a private showing. \nAll applicable Clue rules still apply. This is currently in Beta, \nso any feedback is appreciated! Keep on your toes and enjoy \nremote detectives!\n\n\n\n(Select a number of players between 3-6 to continue...)")
     while True:  # making a loop
+        if keyboard.read_key() == "3":
+            print("\nYou pressed 3")
+            break
         if keyboard.read_key() == "4":
             print("\nYou pressed 4")
             break
