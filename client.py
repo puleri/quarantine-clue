@@ -63,6 +63,7 @@ while count < 4:
 # print("Player 1's hand: ", player1, "\nPlayer 2's hand: ",player2,"\nPlayer 3's hand: ", player3,"\nPlayer 4's hand: ", player4)
 # print("THE CRIME FILE: ", crime_file)
 
+# This is the Modular font
 def main():
     console.print("""\n\n\n\n\n\n\n\n\n\n\n\n\n
  _______  __   __  _______  ______    _______  __    _  _______  ___   __    _  _______
@@ -157,4 +158,4 @@ def main():
     input(f"(press enter to open/close)")
     console.print(f"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[red]THE CASE FILE[/red]: [white]{crime_file}[/white]\n\n\n\n\n\n\n\n\n\n\n\n")
     input(f"(press enter to open/close)")
-main()
+# main()

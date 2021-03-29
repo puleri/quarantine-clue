@@ -1,6 +1,12 @@
 from random import shuffle, randint
 import keyboard
 from rich.console import Console
+from client import main
+
+from six_player import six_player
+from five_player import five_player
+from four_player import four_player
+from three_player import three_player
 
 console = Console()
 
@@ -66,7 +72,7 @@ while count < 4:
 
 
 
-def main():
+def multi():
     console.print("""\n\n\n\n\n\n\n\n\n\n\n\n\n
  _______  __   __  _______  ______    _______  __    _  _______  ___   __    _  _______
 |       ||  | |  ||   _   ||    _ |  |   _   ||  |  | ||       ||   | |  |  | ||       |
@@ -86,15 +92,15 @@ def main():
     console.print("In the dealing phase each player must write down their cards \non seperate pieces of paper. When asking revealing clues then \nthe whole group must allow the two parties a private showing. \nAll applicable Clue rules still apply. This is currently in Beta, \nso any feedback is appreciated! Keep on your toes and enjoy \nremote detectives!\n\n\n\n(Select a number of players between 3-6 to continue...)")
     while True:  # making a loop
         if keyboard.read_key() == "3":
-            print("\nYou pressed 3")
+            three_player()
             break
         if keyboard.read_key() == "4":
-            print("\nYou pressed 4")
+            four_player()
             break
         if keyboard.read_key() == "5":
-            print("\nYou pressed 5")
+            five_player()
             break
         if keyboard.read_key() == "6":
-            print("\nYou pressed 6")
+            six_player()
             break
-main()
+multi()
